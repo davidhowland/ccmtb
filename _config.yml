@@ -1,8 +1,45 @@
-title: Just the Docs Template
-description: A starter template for a Jeykll site using the Just the Docs theme!
+title: Mountain Biking on Cape Cod
+description: A website to catalogue great mountain biking routes on Cape Cod.
 theme: just-the-docs
 
-url: https://just-the-docs.github.io
+url: https://capecodmountainbiking.com
 
 aux_links:
   Template Repository: https://github.com/just-the-docs/just-the-docs-template
+
+# Define Jekyll collections
+collections:
+  # Define a collection named "tests", its documents reside in the "_tests" directory
+  towns:
+    permalink: "/:collection/:path/"
+    output: true
+  trailheads:
+    permalink: "/:collection/:path/"
+    output: true
+
+just_the_docs:
+  collections:
+    towns:
+      # Give the collection a name
+      name: Towns
+      # Exclude the collection from the navigation
+      # Supports true or false (default)
+      # nav_exclude: true
+      # Fold the collection in the navigation
+      # Supports true or false (default)
+      # nav_fold: true  # note: this option is new in v0.4
+      # Exclude the collection from the search
+      # Supports true or false (default)
+      # search_exclude: true
+    trailheads:
+      # Give the collection a name
+      name: Trailheads
+      # Exclude the collection from the navigation
+      # Supports true or false (default)
+      # nav_exclude: true
+      # Fold the collection in the navigation
+      # Supports true or false (default)
+      # nav_fold: true  # note: this option is new in v0.4
+      # Exclude the collection from the search
+      # Supports true or false (default)
+      # search_exclude: true
